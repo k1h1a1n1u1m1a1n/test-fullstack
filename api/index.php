@@ -13,7 +13,6 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($method === 'POST') {
     $method = $data->method;
 }
-
 switch ($method) {
     case 'GET':
         send($node->getNodes(), 200);

@@ -2,16 +2,19 @@ import {useCallback, useEffect} from "react";
 
 const NodeTools = (props) => {
     const handleUserKeyPress = useCallback(event => {
+        if(!props.isEdit) return ;
         const {keyCode} = event;
         if (keyCode === 27) {
             // Escape press
+            event.preventDefault();
             return props.exciteEdit(false);
         }
         if (keyCode === 13) {
             // Enter press
+            event.preventDefault();
             return props.exciteEdit(true);
         }
-    }, []);
+    }, [props.isEdit]);
 
     useEffect(() => {
         window.addEventListener("keydown", handleUserKeyPress);

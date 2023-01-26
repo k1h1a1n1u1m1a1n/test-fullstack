@@ -34,8 +34,9 @@ const Node = (props) => {
                 <div className="flex align-center">
                     <i className={has_children ? "icon-folder" : "icon-file"}/>
                     {isEdit
-                        ? <input ref={editInput} className="node-edit" type="text" defaultValue={tree.title}
-                                 onBlur={() => exciteEdit(true)} onClick={e => e.stopPropagation()}/>
+                        ? <input required="required" ref={editInput} className="node-edit"
+                                 type="text" defaultValue={tree.title} onBlur={() => exciteEdit(true)}
+                                 onClick={e => e.stopPropagation()}/>
                         : <span>{tree.title}</span>
                     }
                     {has_children && !isEdit && <i className="icon-arrow-right"/>}
