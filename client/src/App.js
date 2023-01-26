@@ -1,5 +1,4 @@
 import "./scss/index.scss";
-import "./app.scss";
 import Trees from "./components/Trees/Trees";
 import {TreesContext} from "./context";
 import {useEffect, useState} from 'react';
@@ -19,7 +18,6 @@ function App() {
                 <Trees/>
             </TreesContext.Provider>
         </div>
-
     );
 }
 

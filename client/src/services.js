@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 class NodeService {
-
     api_url = 'https://orlov-test.000webhostapp.com/api/';
     error_message = 'Something went wrong. Try again letter';
 
@@ -35,7 +34,6 @@ class NodeService {
             if (el.children) return el.children.reduce(sort, acc);
             return acc;
         }
-
 
         if (!parent_id) {
             trees.push({id: res.data.id, title, parent_id})

@@ -1,26 +1,3 @@
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (min-width: 768px) {
-    width: 750px;
-  }
-
-  @media (min-width: 992px) {
-    width: 970px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1170px
-  }
-
-  @media (min-width: 1440px) {
-    width: 1370px
-  }
-}
-
 .flex {
   display: flex;
 }
@@ -52,7 +29,6 @@
   padding: 8px 22px;
   border-radius: 4px;
   transition: 0.4s;
-
 
   &:hover {
     background-color: #2787c7;
